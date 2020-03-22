@@ -34,6 +34,16 @@ def list_of_directors(source)
 end
 
 def total_gross(source)
+  result = 0
+  directors_totals = directors_totals source
+  list_of_directors = list_of_directors source
+  
+  list_of_directors.count.times do |index|
+    director = list_of_directors[index]
+    total =+ directors_totals[director]
+  end
+  result
+  
   # Write this implementation
   #
   # Should use methods:
