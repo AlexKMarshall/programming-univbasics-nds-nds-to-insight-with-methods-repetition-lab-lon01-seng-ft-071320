@@ -30,6 +30,7 @@ def list_of_directors(source)
   source.count.times do |index|
     result << source[index][:name]
   end
+  result
 end
 
 def total_gross(source)
