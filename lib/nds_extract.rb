@@ -40,7 +40,7 @@ def total_gross(source)
   
   list_of_directors.count.times do |index|
     director = list_of_directors[index]
-    total += directors_totals[director]
+    result += directors_totals[director]
   end
   result
   
